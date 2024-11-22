@@ -35,3 +35,20 @@ body {
     transform: rotate(360deg);
   }
 }
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-animated-gradient {
+  background: linear-gradient(270deg, #ff4081, #8e24aa, #3949ab, #3f51b5);
+  background-size: 400% 400%;
+  animation: gradient-flow 10s ease infinite;
+}
